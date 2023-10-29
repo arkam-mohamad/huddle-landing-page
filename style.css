@@ -1,0 +1,100 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+body{
+  background-image: url('./images/bg-desktop.svg');
+  background-color: hsl(257, 40%, 49%);
+  padding: 5% 10%;
+  display: flex;
+  flex-direction: column;
+}
+main{
+  display: flex;
+  width: 900px;
+  gap: 40px;
+  padding: 20px 20px 20px 10px;
+}
+main img{
+  width: 50%;
+}
+.content{
+  padding: 40px 20px;
+}
+h1{
+  color: white;
+  font-size: 36px;
+}
+p{
+  color: white;
+  font-size: 15px;
+  margin-top: 10px;
+  font-family: 'Open Sans', sans-serif;
+}
+button{
+  background-color: white;
+  border: 0;
+  padding: 10px 20px;
+  border-radius: 20px;
+  width: 40%;
+  margin-top: 20px;
+  box-shadow: 5px 5px 5px rgb(86, 86, 86);
+}
+button:hover{
+  background-color: hsl(300, 69%, 71%);
+  color: white;
+}
+footer{
+  align-self: flex-end;
+  display: flex;
+  gap: 5px;
+  align-items: center;
+  margin-right: 15%;
+}
+.icon{
+  border-radius: 50%;
+  color: white;
+  font-size: 1.5rem;
+}
+.icon:hover{
+  color: hsl(300, 69%, 71%);
+}
+.fb{
+  color: hsl(257, 40%, 49%);
+  background-color: white;
+}
+.fb:hover{
+  color: hsl(257, 40%, 49%);
+  background-color: hsl(300, 69%, 71%);
+}
+
+
+@media screen and (max-width:768px) {
+  body{
+    align-items: center;
+    padding: 10px 0;
+  }
+  main{
+    flex-direction: column;
+    align-items: center;
+    width: fit-content;
+    height: fit-content;
+  }
+  .content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  h1,p{
+    text-align: center;
+  }
+  h1{
+    font-size: 1.6rem;
+  }
+  footer{
+    align-self: center;
+    margin-right: 0;
+  }
+}
